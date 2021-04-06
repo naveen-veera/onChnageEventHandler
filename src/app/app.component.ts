@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'eventHandlingOnChange';
+  name : string;
+
+  onChangeName(event) : void{
+    this.name = event.target.value;
+  }
+
 }
